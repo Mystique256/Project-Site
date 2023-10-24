@@ -1,0 +1,27 @@
+            <div class="souvenir">
+                <label><input type="checkbox">se souvenir de moi</label>
+                <a href="#">MDP oublier</a>
+            </div>
+
+            $serveur = 'localhost';
+    $login = 'root';
+    $mdp =  '';
+
+    $connection = new PDO("mysql:host=$serveur;dbname=identification", $login, $mdp);
+
+
+    if (isset($_POST['envoi'])) {
+        if(!empty($_POST['pseudo']) AND !empty($_POST['pwd'])) {
+            $pseudo = htmlspecialchars($_POST['pseudo']);
+            $pwd = sha1($_POST['pwd']);
+            $email = htmlspecialchars($_POST['email']);
+            $insertUser = $connection->prepare('INSERT INTO users(pseudo, pwd,)VALUES(?,?)');
+            $insertUser->execute(array('$pseudo, $pwd'));
+
+        }
+        else
+        {
+            echo "Completer tous les champs..." ;
+        }
+
+    }

@@ -1,0 +1,119 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.b3f64aaeb9ad92a2b2012d2e5324a686?rik=rb14yGjwompIvw&pid=ImgRaw&r=0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.couleur-erreurs {
+    color: #ff0000;
+}
+
+
+.login {
+    width: 420px;
+    height: auto;
+    background-color:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #ffffff;
+    border-radius:20px;
+    padding: 30px 40px;
+    -webkit-animation:appear 1s ease 0s 1 normal;
+    -moz-animation:appear 1s ease 0s 1 normal;
+    -ms-animation:appear 1s ease 0s 1 normal;
+    animation:appear 1s ease 0s 1 normal;
+
+}
+
+.login h1 {
+    font: 36px;
+    text-align: center;
+
+}
+
+.login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+.login .button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    color:#333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login .enregistrez-vous {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 10px;
+    margin: 20px 0 15px;
+
+}
+
+.enregistrez-vous p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.enregistrez-vous p a:hover {
+    text-decoration: underline;
+}
+
+
+
+@-webkit-keyframes appear {
+    0%{ opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3); }
+    60%{ opacity: 1; -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+    }
+    @keyframes appear {
+    0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+    60%{ opacity: 1; transform: scale3d(1,1,1); }
+    }
